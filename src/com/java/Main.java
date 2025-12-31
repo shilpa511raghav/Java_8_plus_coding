@@ -58,6 +58,9 @@ public class Main {
          */
         ThreadImplWithLambda myThread = new ThreadImplWithLambda();
         myThread.startThread();
+
+        /*Stream*/
+        MasterStreamAPI.printEvenNumberFromList();
     }
 }
 
