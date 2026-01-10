@@ -1,5 +1,7 @@
 package com.java;
 
+import com.java.StreamsExamples.MasterStreamAPI;
+
 public class Main {
 
     public static void main(String[] args) {

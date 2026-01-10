@@ -1,4 +1,4 @@
-package com.java;
+package com.java.StreamsExamples;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,7 +29,7 @@ public class MasterStreamAPI {
         List immutableEvenList1 = list1.stream().filter(i -> i % 2 == 0).toList(); // .toList() method return unmodifiable/immutable list(introduced in java 16)
         List mutableEvenList2 = list1.stream().filter(i -> i % 2 == 0).collect(Collectors.toList()); // .collect(Collectors.toList() returns modifiable/mutable list)
         System.out.println("stream evenlist : "+ immutableEvenList1);
-        //immutableEvenList1.add(56); // invalid operation as this list cannot be modified and result in compile erros
+        //immutableEvenList1.add(56); // invalid operation as this list cannot be modified and result in compile errors
         //System.out.println("modified immutable evenList1= =="+ immutableEvenList1);
 
         mutableEvenList2.add(88);

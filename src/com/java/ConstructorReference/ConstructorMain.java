@@ -14,7 +14,7 @@ public class ConstructorMain {
         //Using constructor reference like below using new keyword or using Student class constructor
         //We write ProviderInterface on the LHS because method and constructor references must be assigned to a functional interface type.
         // The interface defines the abstract method signature that the reference matches
-
+        //ClassName::new
         ProviderInterface providerInterface1 = Student::new;
         Student student= providerInterface1.getStudentName("Amit");
         student.dispayStudentName();
